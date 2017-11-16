@@ -1,0 +1,112 @@
+<%- include base/header.ejs %>
+                <div class="sort-page">
+                    <div class="sort aside">
+                        <div class="catalog" style="margin-bottom: 30px;">
+                            <div class="hd">
+                                <a href="/fpub?type=A002" title="" class="list-title">外文期刊</a>
+                            </div>
+                            <div class="bd">
+                                <ul class="list1">
+                                    <li>
+                                        <a href="/fpub?type=A002-B001" title="" class="list-cate1" data-id="A002-B001">英文文献</a>
+                                    </li>
+                                    <li>
+                                        <a href="/fpub?type=A002-B002" title="" class="list-cate1" data-id="A002-B002">日文文献</a>
+                                    </li>
+                                    <li>
+                                        <a href="/fpub?type=A002-B003" title="" class="list-cate1" data-id="A002-B003">俄文文献</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>                       
+                    </div>
+                    <div class="book-show inside">
+                        <div class="hd">
+                            <ul class="page-curmbs" id="page-curmbs">
+                                <li><a href="javascript:;" title="">一重阅读</a></li>
+                                <li id="allBook"><a href="/fpub" title="">外文期刊</a></li>
+                                <li class="current"><a href="" id="current"></a></li>
+                            </ul>
+                        </div>
+                        <script>
+                            (function(){
+                                var type = '<%=type%>';
+                                var current = $('#current');
+                                var list = {
+                                    'A002' : '外文期刊',
+                                    'A002-B001' : '英文文献',
+                                    'A002-B002' : '日文文献',
+                                    'A002-B003' : '俄文文献'
+                                }
+
+                                //设置位置和侧栏
+                                if(type != 'A002'){
+                                    var cur = list[type];
+                                    current.attr('href', '/fpub?type=' + type);
+                                    current.html(cur);
+                                    $('.list-cate1').each(function(index,item){
+                                        var id = $(item).attr('data-id');
+                                        if (type == id) {
+                                            $(item).addClass('current');
+                                        }
+                                    })
+                                } else{
+                                    current.remove();
+                                    $('#allBook').addClass('current');
+                                }
+
+                            })()
+                        </script>
+                        <div class="bd">
+                            <% if(result.list.length > 0){%>
+                            <div class="booklist">
+                                <div class="booklist-inner clearfix">
+                                    <% result.list.forEach(function(item){ %>
+                                    <div class="book">
+                                        <a href="/sourceList?bookISBN=<%=item.bookISBN%>" title="" class="img-block" target="_blank">
+                                            <img src='<%=imgPath%><%= item.bookImage%>' alt="">
+                                        </a>
+                                        <a href="/sourceList?bookISBN=<%=item.bookISBN%>" title="" class="title-link" target="_blank">
+                                            <span class="title"><%= item.bookName%></span>
+                                        </a>
+                                        <!-- <p class="book-num">
+                                            <span>2017年8月刊</span>
+                                        </p> -->
+                                    </div>
+                                    <% }); %>
+                                </div>
+                            </div>
+                            
+                            <div class="page">
+                                <form action="/fpub" method="get">
+                                    <a href="/fpub?page=1&type=<%=type%>">首页</a>
+                                    <% if(result.hasPreviousPage){%>
+                                    <% var prePage = result.currentPage - 1%>
+                                    <a href="/fpub?page=<%=prePage%>&type=<%=type%>">上一页</a>
+                                    <%}%>
+                                    <input type="text" value="<%=result.currentPage%>" id="curPage" name="page"><span class="total"> /&nbsp; &nbsp;<%=result.totalPage%></span>
+                                    <input type="hidden" name="type" value="<%=type%>">
+                                    <% if(result.hasNextPage){%>
+                                    <% var nextPage = result.currentPage + 1%>
+                                    <a href="/fpub?page=<%=nextPage%>&type=<%=type%>">下一页</a>
+                                    <%}%>
+                                    <a href="/fpub?page=<%=result.totalPage%>&type=<%=type%>">末页</a>
+                                    <button id="go" type="submit">Go</button>
+                                </form>
+                            </div>
+                            <%}else{%>
+                            <div class="empty-page">
+                                <img src="/images/empty1.png" alt="">
+                            </div>
+                            <%}%>
+                        </div>
+                    </div>
+                </div>
+<%- include base/base.ejs %>
+<script>
+    (function(){
+        $('.nav-li').eq(4).addClass('current');
+    })()
+</script>
+
+<%- include base/footer.ejs %>

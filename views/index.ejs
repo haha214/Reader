@@ -1,0 +1,87 @@
+<%- include base/header.ejs %>
+                <div class="index">
+                    <div class="banner layui-carousel" id="carousel">
+                        <div carousel-item>
+                            <!-- <img src="/images/xx2.jpg" alt=""> -->
+                            <img src="/images/banner2.jpg" alt="">
+                            <img src="/images/xx1.jpg" alt="">
+                            <img src="/images/banner3.jpg" alt="">
+                            <img src="/images/banner4.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="tag">
+                        <span class="tag-name">分类</span>
+                        <ul class="tag-ul clearfix">
+                            <li>
+                                <a href="http://172.29.36.145:3000/dynamics" title="">机械行业动态</a>
+                            </li>
+                            <li>
+                                <a href="http://172.29.36.145:3000/topical" title="">情报专题</a>
+                            </li>
+
+                            <li>
+                                <a href="http://172.29.36.145:3000/sort?type=A002-B001" title="">英文刊物</a>
+                            </li>
+                            <li>
+                                <a href="http://172.29.36.145:3000/sort?type=A002-B002" title="">日文刊物</a>
+                            </li>
+                            <li>
+                                <a href="http://172.29.36.145:3000/sort?type=A002-B003" title="">俄文刊物</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="book_mod">
+                        <div class="hd">
+                            <!-- <a href="" title="" target="_blank">更多&nbsp;></a> -->
+                            <h3 class="mod-title">新书上线</h3>
+                        </div>
+                        <div class="bd">
+                            <ul class="clearfix">
+                                <% newBook.forEach(function(item){%>
+                                <li class="book">
+                                    <a href="<%=bookPath%><%=item.bookId%>" title="" class="book-cover" target="_blank">
+                                        <img src="<%=imgPath%><%=item.bookImage%>" alt="" class="book-img">
+                                    </a>
+                                    <a href="<%=bookPath%><%=item.bookId%>" class="book-title" target="_blank"><%=item.bookName%></a>
+                                    <p class="book-num"><%=item.publishDate%></p>
+                                </li>
+                                <% }); %>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="book_mod">
+                        <div class="hd">
+                            <!-- <a href="" title="" target="_blank">更多&nbsp;></a> -->
+                            <h3 class="mod-title">热门推荐</h3>
+                        </div>
+                        <div class="bd">
+                            <ul class="clearfix">
+                                <% clickBook.forEach(function(item){%>
+                                <li class="book">
+                                    <a href="<%=bookPath%><%=item.bookId%>" title="" class="book-cover" target="_blank">
+                                        <img src="<%=imgPath%><%=item.bookImage%>" alt="" class="book-img">
+                                    </a>
+                                    <a href="<%=bookPath%><%=item.bookId%>" title="" class="book-title" target="_blank"><%=item.bookName%></a>
+                                    <p class="book-num"><%=item.publishDate%></p>
+                                </li>
+                                <% }); %>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+<%- include base/base.ejs %>
+<script>
+    (function(){
+        $('.nav-li').eq(0).addClass('current');
+
+        layui.use('carousel',function(){
+            var carousel = layui.carousel;
+            carousel.render({
+                elem: '#carousel',
+                width: '100%'
+            })
+        })
+    })()
+</script>
+
+<%- include base/footer.ejs %>

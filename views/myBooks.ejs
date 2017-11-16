@@ -1,0 +1,103 @@
+<%- include base/header.ejs %>
+                <div class="myBooks">
+                    <div class="sort aside">
+                        <div class="catalog my">
+                            <div class="hd">
+                                <a href="javascript:;" title="" class="list-title">
+                                    <img src="/images/bookicon.png" alt="" class="">
+                                    <br>
+                                    <span>我的书架</span>
+                                </a>
+                            </div>
+                            <div class="bd">
+                                <ul class="list1">
+                                    <li>
+                                        <a href="/myBooks?type=0" title="" class="list-cate1">我的收藏</a>
+                                    </li>
+                                    <li>
+                                        <a href="/myBooks?type=1" title="" class="list-cate1">我的浏览</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="imgs">
+                                <ul>
+                                    <li><img src="/images/s1.jpg" alt=""></li>
+                                    <li><img src="/images/s2.jpg" alt=""></li>
+                                    <li><img src="/images/s3.jpg" alt=""></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-show inside">
+                        <div class="hd">
+                            <ul class="page-curmbs" id="page-curmbs">
+                                <%if(type == 0){%>
+                                <li class="current"><a href="/myBooks?type=0" title="">我的收藏</a></li>
+                                <%}else{%>
+                                <li class="current"><a href="/myBooks?type=1" title="">我的浏览</a></li>
+                                <%}%>
+                            </ul>
+                        </div>
+                        <div class="bd">
+                            <div class="booklist">
+                                <div class="booklist-inner clearfix" id="booklst">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+<%- include base/base.ejs %>
+<script type="text/html" id="template">
+    {{each lstBookView as item i}}
+    <div class="book">
+        <a href="<%=serverPath%>admin/queryBookFileInfo.action?bookId={{item.bookId}}%>" title="" class="img-block" target="_blank">
+            <img src='<%=serverPath%>{{item.bookImage}}'>
+        </a>
+        <a href="<%=serverPath%>admin/queryBookFileInfo.action?bookId={{item.bookId}}"  class="title-link" target="_blank">
+            <span class="title">{{item.bookName}}</span>
+        </a>
+        <p class="book-num">
+            <span>{{item.publishDate}}</span>
+        </p>
+    </div>
+    {{/each}}
+</script>
+<script>
+    (function(){
+        layui.use(['layer'],function(){
+            var layer = layui.layer;
+            var loading = layer.load();
+            <% if(type == 0){%>
+            var url = '<%=serverPath%>my/getMyFavorite.action?callback=?';
+            <%}else{%>
+            var url = '<%=serverPath%>my/queryMyHistory.action?callback=?';
+            <%}%>
+            $.ajax({
+                url: url,
+                dataType: 'jsonp',
+                success: function(data){
+                    //console.log(data);
+                    if (data && data.jsonRet == 200) {
+                        var compiled = '';
+                        if (data.lstBookView.length > 0) {
+                            compiled = template('template',data);
+                        } else{
+                            compiled = '<div class="empty-page"><img src="/images/empty1.png"></div>';
+                        }
+                        $('#booklst').html(compiled);
+                    } else{
+                        $('#booklst').html('数据获取异常');
+                    }
+                    layer.close(loading);
+                },
+                error: function(x,h,r){
+                    $('#booklst').html('数据获取异常');
+                    layer.close(loading);
+                    //console.log(x,h,r);
+                }
+            })
+        })
+    })()
+</script>
+<%- include base/footer.ejs %>

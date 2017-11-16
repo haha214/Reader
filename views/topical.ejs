@@ -1,0 +1,71 @@
+<%- include base/header.ejs %>
+    <div class="list">
+        <h3 class="page-title">相关数据</h3>
+        <ul class="list-result">
+        <% result.list.forEach(function(item){%>
+            <li class="clearfix item">
+                <a href="<%=serverPath%>admin/queryBookFileInfo.action?bookId=<%=item.bookId%>" title="" class="pic" target="_blank">
+                    <img src="<%=serverPath%><%= item.bookImage%>" alt="">
+                </a>
+                <div class="detail">
+                    <button class="collect" data-book="<%=item.bookId%>">收藏</button>
+                    <h2><a href="<%=serverPath%>admin/queryBookFileInfo.action?bookId=<%=item.bookId%>" target="_blank"><%=item.bookName%></a></h2>
+                    <p><span class="p-title">出版时间: </span><%=item.publishDate%></p>
+                    <p><span class="p-title">类型:</span><%=item.bookType%></p>
+                    <p><span class="p-title">ISBN/ISSN:</span><%=item.bookISBN%></p>
+                    <p class="des">
+                        <span class="p-title">描述:</span> 
+                        <span><%=item.bookDesc%></span> </p>
+                </div>
+            </li>
+        <%});%>
+        </ul>
+    </div>
+<%- include base/base.ejs %>
+<script >
+    (function(){
+        $('.nav-li').eq(3).addClass('current');
+        
+        layui.use(['layer'],function(){
+            var layer = layui.layer;
+            $('.list-result').on('click', '.collect', function(event) {
+                var that = $(this);
+                var bookId = that.attr('data-book');
+                var loading = layer.load();
+                $.ajax({
+                    url: '<%=serverPath%>my/addMyFavorite4Json.action?callback=?' ,
+                    data: {
+                        "bookId" : bookId
+                    },
+                    dataType: 'json',
+                    crossDomain: true,
+                    success: function(data){
+                        //console.log(data);
+                        if (data && data.jsonRet == 200) {
+                            layer.alert('收藏成功！',{
+                                time: 3000,
+                                skin: 'layui-layer-molv'
+                            });
+                        } else{
+                            layer.alert('收藏失败！',{
+                                time: 3000,
+                                skin: 'layui-layer-molv'
+                            });
+                        }
+                        layer.close(loading);
+                    },
+                    error: function(x,h,r){
+                        console.log(x,h,r);
+                        layer.alert('服务器异常！',{
+                            time: 3000,
+                            skin: 'layui-layer-molv'
+                        });
+                        layer.close(loading);
+                    }
+                })
+            });
+        })
+    })()
+</script>
+
+<%- include base/footer.ejs %>

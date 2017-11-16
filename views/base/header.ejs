@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title><%=title%></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8">
+        <link rel="stylesheet" type="text/css" href="/layui/css/layui.css">
+        <link rel="stylesheet" type="text/css" href="/stylesheets/global.css">
+        <script src="/javascripts/jquery-1.11.1.min.js"></script>
+        <script src="/javascripts/template.js"></script>
+        <script src="/layui/layui.js"></script>
+    </head>
+
+    <body>
+        <div class="all-wrap clearfix">
+            <div class="header">
+                <div class="search">
+                    <a href="" class="logo"></a>
+                    <div class="searchbox">
+                        <form action="/list" method="get">
+                            <% if(typeof(desc) == 'undefined'){%>
+                            <input type="text" name="desc" id="" value="" class="s-word"/>
+                            <%}else{%>
+                            <input type="text" name="desc" id="" value="<%=desc%>" class="s-word"/>
+                            <%}%>
+                            <input type="submit" value="搜索图书" class="s-submit"/>
+                        </form>
+                    </div>
+                </div>
+                <div class="nav">
+                    <div class="nav-inner">
+                        <ul class="nav-ul clearfix">
+                            <li class="nav-li">
+                                <a href="/"><span>首页</span></a>
+                                <span class="nav-border"></span>
+                            </li>
+                            <li class="nav-li">
+                                <a href="/sort"><span>分类</span></a>
+                                <span class="nav-border"></span>
+                            </li>
+                            <li class="nav-li">
+                                <a href="/dynamics"><span>机械行业动态</span></a>
+                                <span class="nav-border"></span>
+                            </li>
+                            <li class="nav-li">
+                                <a href="/topical"><span>情报专题</span></a>
+                                <span class="nav-border"></span>
+                            </li>
+                            <li class="nav-li">
+                                <a href="/fpub"><span>外文刊物</span></a>
+                                <span class="nav-border"></span>
+                            </li>
+                            <li class="nav-right">
+                                <a href="/myBooks">
+                                    <span class="nav-mybook"></span>
+                                    我的书架
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="main clearfix">

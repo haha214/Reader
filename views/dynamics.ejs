@@ -1,0 +1,71 @@
+<%- include base/header.ejs %>
+                <div class="dynamics">
+                    <div class="aside">
+                        <div class="catalog">
+                            <div class="hd">
+                                <a href="/dynamics" title="" class="list-title">机械行业动态信息</a>
+                            </div>
+                            <div class="bd">
+                                <ul class="list1">
+                                    <% for(var i = getYear; i>= deadline ; i--){%>
+                                    <li>
+                                        <% var cur = ''%>
+                                        <%if(i == year) {%>
+                                        <% cur = 'current'%>
+                                        <%}%>
+                                        <a href="/dynamics?year=<%=i%>" title="" class="list-cate1 <%=cur%>" ><%=i%></a>
+                                    </li>
+                                    <%}%>
+                                </ul>
+                                <div class="imgs">
+                                    <ul>
+                                        <li><img src="/images/s1.jpg" alt=""></li>
+                                        <li><img src="/images/s3.jpg" alt=""></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-show inside">
+                        <div class="hd">
+                            <ul class="page-curmbs" id="page-curmbs">
+                                <li><a href="javascript:;" title="">一重阅读</a></li>
+                                <li><a href="javascript:;" title="">机械行业动态</a></li>
+                                <li class="current"><a href="/dynamics?year=<%=year%>" id="current"><%=year%></a></li>
+                            </ul>
+                        </div>
+                        <div class="bd">
+                            <%if(result.list.length > 0){%>
+                            <div class="booklist">
+                                <div class="booklist-inner clearfix">
+                                    <% result.list.forEach(function(item){%>
+                                    <div class="book">
+                                        <a href="<%=serverPath%>admin/queryBookFileInfo.action?bookId=<%=item.bookId%>" title="" class="img-block" target="_blank">
+                                            <img src='<%=serverPath%><%=item.bookImage%>' alt="">
+                                        </a>
+                                        <!-- <a href="/list?desc=" title="" class="title-link" target="_blank">
+                                            <span class="title"></span>
+                                        </a> -->
+                                        <p class="book-num">
+                                            <span><%=item.publishDate%></span>
+                                        </p>
+                                    </div>
+                                    <%});%>
+                                </div>
+                            </div>
+                            <%}else{%>
+                                <div class="empty-page">
+                                    <img src="/images/empty1.png" alt="">
+                                </div>
+                            <%}%>
+                        </div>
+                    </div>
+                </div>
+<%- include base/base.ejs %>
+<script>
+    (function(){
+        $('.nav-li').eq(2).addClass('current');
+    })()
+</script>
+
+<%- include base/footer.ejs %>

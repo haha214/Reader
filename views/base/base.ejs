@@ -1,0 +1,21 @@
+            </div>
+            <div class="footer">
+                <p class="contact">如有问题欢迎联系信息技术部</p>
+                <p>©2017 一重集团大连工程技术有限公司</p>
+            </div>
+        </div>
+        <script>
+            var global = (function(){
+
+                //页面跳转
+                var goPage = function(callback){
+                    $('.page').on('click', '#go', function(event) {
+                        var page = $('#curPage').val();
+                        callback(page);
+                    });
+                }
+                return {
+                    goPage : goPage
+                }
+            })()
+        </script>
