@@ -15,39 +15,40 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\0000322}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\0000323}}
 body {
   font-family: Tahoma, Helvetica, "microsoft yahei", "Hiragino Sans GB", Simsun, sans-serif;
   line-height: 1.5;
   font-size: 12px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\0000328}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\0000329}}
 input,
 button {
   outline: none;
   border: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\0000334}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\0000335}}
 input,
 textarea,
 button {
   font-family: Tahoma, Helvetica, "microsoft yahei", "Hiragino Sans GB", Simsun, sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\0000340}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\0000341}}
 img {
   vertical-align: middle;
   border: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\0000345}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\0000346}}
 a {
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\0000349}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\0000350}}
 a:hover {
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\0000353}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\0000354}}
 h1,
 h2,
 h3,
@@ -56,7 +57,7 @@ h5,
 h6 {
   font-weight: 500;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\0000362}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\0000363}}
 html,
 body,
 h1,
@@ -72,28 +73,28 @@ form {
   margin: 0;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\0000378}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\0000379}}
 ul,
 ol,
 li {
   list-style: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\0000384}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\0000385}}
 .fL {
   float: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\0000388}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\0000389}}
 .fR {
   float: right;
 }
 /*文本单行超出省略号表示*/
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\0000395}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\0000396}}
 .text-ellipsis {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003101}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003102}}
 .clearfix:before,
 .clearfix:after,
 .row:before,
@@ -107,7 +108,7 @@ li {
   display: table;
   content: "";
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003115}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003116}}
 .clearfix:after,
 .row:after,
 .form-group:after,
@@ -115,20 +116,20 @@ li {
 .bd:after {
   clear: both;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003123}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003124}}
 .clearfix {
   *zoom: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003127}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003128}}
 .clear {
   clear: both;
 }
 /*手势*/
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003134}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003135}}
 .pointer {
   cursor: pointer;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003138}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003139}}
 .all-wrap {
   width: 1000px;
   margin: 0 auto;
@@ -137,13 +138,13 @@ li {
   padding-bottom: 116px;
 }
 /*头部*/
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003151}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003152}}
 .search {
   position: relative;
   margin: 0 30px;
   height: 110px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003155}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003156}}
 .search .logo {
   position: absolute;
   top: 19px;
@@ -152,12 +153,12 @@ li {
   height: 50px;
   background: url(../images/logo.png) 100% 100% no-repeat;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003163}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003164}}
 .search .searchbox {
   margin-left: 154px;
   padding-top: 30px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003166}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003167}}
 .search .searchbox .s-word {
   width: 372px;
   height: 35px;
@@ -170,7 +171,7 @@ li {
   background: #fff;
   outline: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003178}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003179}}
 .search .searchbox .s-submit {
   display: inline-block;
   cursor: pointer;
@@ -189,19 +190,19 @@ li {
   background: linear-gradient(to bottom, #fcfcfc 0, #f3f3f3 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#f3f3f3', GradientType=0);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003202}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003203}}
 .nav {
   position: relative;
   width: 100%;
   border-bottom: 2px solid #58bd5a;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003206}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003207}}
 .nav .nav-inner {
   height: 32px;
   margin: 0 30px;
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003211}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003212}}
 .nav .nav-li {
   float: left;
   height: 32px;
@@ -210,12 +211,12 @@ li {
   font-size: 16px;
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003220}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003221}}
 .nav .nav-li:hover .nav-border,
 .nav .nav-li.current .nav-border {
   height: 4px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003224}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003225}}
 .nav .nav-li a {
   display: block;
   position: relative;
@@ -224,11 +225,11 @@ li {
   -webkit-transition: all .2s linear;
   transition: all .2s linear;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003233}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003234}}
 .nav .nav-li a:hover {
   color: #2f9b34;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003237}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003238}}
 .nav .nav-li .nav-border {
   width: 100%;
   display: block;
@@ -240,13 +241,13 @@ li {
   -webkit-transition: all .2s;
   transition: all .2s;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003251}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003252}}
 .nav .nav-right {
   position: absolute;
   right: 0;
   bottom: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003255}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003256}}
 .nav .nav-right a {
   display: block;
   width: 123px;
@@ -257,7 +258,7 @@ li {
   color: #666;
   padding-left: 33px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003264}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003265}}
 .nav .nav-right a .nav-mybook {
   background-image: url(../images/icon.png);
   background-position: -184px -212px;
@@ -269,16 +270,16 @@ li {
   top: 7px;
   left: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003275}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003276}}
 .nav .nav-right a:hover {
   color: #56A857;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003277}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003278}}
 .nav .nav-right a:hover .nav-mybook {
   background-position: -184px -152px;
 }
 /*页脚*/
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003286}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003287}}
 .footer {
   line-height: 1;
   font-size: 12px;
@@ -290,13 +291,13 @@ li {
   width: 100%;
   bottom: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003296}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003297}}
 .footer .contact {
   font-size: 14px;
   margin-bottom: 10px;
 }
 /*翻页*/
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003303}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003304}}
 .page {
   font-size: 14px;
   text-align: center;
@@ -304,7 +305,7 @@ li {
   border-bottom: 1px solid #ccc;
   vertical-align: top;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003309}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003310}}
 .page .total {
   display: inline-block;
   vertical-align: top;
@@ -312,7 +313,7 @@ li {
   padding: 2px 4px;
   margin: 0 4px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003316}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003317}}
 .page input {
   height: 24px;
   line-height: 24px;
@@ -321,7 +322,7 @@ li {
   padding-left: 6px;
   vertical-align: top;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003324}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003325}}
 .page button,
 .page a {
   display: inline-block;
@@ -335,30 +336,30 @@ li {
   cursor: pointer;
   margin: 0 4px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003335}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003336}}
 .page button:hover,
 .page a:hover {
   background: #e9f1f7;
   color: #0000cd;
 }
 /*空白页*/
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003343}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003344}}
 .empty-page {
   text-align: center;
 }
 /*主体*/
 /*首页*/
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003353}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003354}}
 .index .banner {
   margin: 20px 0;
   height: 285px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003357}}
 .index .banner img {
   width: 100%;
   height: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003361}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003362}}
 .index .tag {
   margin: 0 30px;
   padding: 10px 0 25px;
@@ -366,7 +367,7 @@ li {
   background: url(../images/line.png) 1px bottom repeat-x;
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003367}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003368}}
 .index .tag .tag-name {
   display: inline-block;
   padding: 22px 10px 0 0;
@@ -379,14 +380,14 @@ li {
   position: absolute;
   left: 25px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003379}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003380}}
 .index .tag .tag-ul {
   display: block;
   padding-left: 10px;
   margin-left: 70px;
   text-align: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003384}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003385}}
 .index .tag .tag-ul li {
   float: left;
   margin: 15px 10px 0 0;
@@ -396,7 +397,7 @@ li {
   border-radius: 7px;
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003392}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003393}}
 .index .tag .tag-ul li a {
   display: inline-block;
   border-radius: 6px;
@@ -407,25 +408,25 @@ li {
   -webkit-transition: all .2s linear;
   transition: all .2s linear;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003403}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003404}}
 .index .tag .tag-ul li a:hover {
   background-color: #fff;
   color: #555;
   border: 1px solid #d3d3d3;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003412}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003413}}
 .index .book_mod {
   background: url(../images/line.png) 1px bottom no-repeat;
   background-color: #f6f5ee;
   margin: 0 30px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003416}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003417}}
 .index .book_mod .hd {
   padding: 22px 0 5px;
   text-align: center;
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003420}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003421}}
 .index .book_mod .hd a {
   position: relative;
   right: 10px;
@@ -435,17 +436,17 @@ li {
   padding: 5px 10px;
   vertical-align: top;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003429}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003430}}
 .index .book_mod .hd .mod-title {
   font-size: 24px;
   color: #444;
   font-weight: 400;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003435}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003436}}
 .index .book_mod .bd {
   padding: 0 30px 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003437}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003438}}
 .index .book_mod .bd .book {
   float: left;
   width: 157px;
@@ -456,7 +457,7 @@ li {
   position: relative
   /*overflow: hidden;*/
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003446}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003447}}
 .index .book_mod .bd .book .book-cover {
   display: block;
   width: 157px;
@@ -465,14 +466,14 @@ li {
   margin: 0 auto
   /* background: url(../images/book_bg.png) no-repeat -79px -64px*/
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003453}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003454}}
 .index .book_mod .bd .book .book-cover img {
   height: 100%;
   width: 100%;
   border-radius: 10px;
   box-shadow: 0 3px 5px #b0b0b0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003460}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003461}}
 .index .book_mod .bd .book .book-title {
   font-size: 15px;
   margin-top: 2px;
@@ -485,24 +486,28 @@ li {
   overflow: hidden;
   word-break: break-all;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003472}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003473}}
 .index .book_mod .bd .book .book-num {
   color: #c97618;
   font-size: 14px;
   height: 23px;
   line-height: 23px;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003479}}
+.index .book_mod .bd .book .book-cata {
+  display: none;
+}
 /*分类页面*/
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003483}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003487}}
 .sort-page,
 .dynamics {
   padding-top: 30px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003486}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003490}}
 .catalog {
   width: 240px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003488}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003492}}
 .catalog .list-title {
   display: block;
   background: #34495e;
@@ -512,7 +517,7 @@ li {
   line-height: 42px;
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003497}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003501}}
 .catalog .list-cate1 {
   display: block;
   width: 240px;
@@ -525,7 +530,7 @@ li {
   background: #F5F4F2;
   font-size: 12px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003508}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003512}}
 .catalog .list-cate1 .ic {
   display: inline-block;
   height: 16px;
@@ -536,35 +541,35 @@ li {
   right: 8px;
   top: 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003518}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003522}}
 .catalog .list-cate1:hover,
 .catalog .list-cate1.current {
   background-color: #34495e;
   border-color: #34495e;
   color: #fff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003522}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003526}}
 .catalog .list-cate1:hover .ic,
 .catalog .list-cate1.current .ic {
   background-position: 0 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003527}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003531}}
 .catalog .imgs {
   margin-top: 30px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003529}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003533}}
 .catalog .imgs li {
   width: 100%;
   height: 120px;
   overflow: hidden;
   margin-bottom: 20px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003535}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003539}}
 .catalog .imgs img {
   width: 100%;
   height: auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003542}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003546}}
 .my.catalog .list-title {
   color: #000;
   background: #F5F4F2;
@@ -575,12 +580,12 @@ li {
   font-size: 16px;
   padding: 10px 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003551}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003555}}
 .my.catalog .list-title img {
   width: 120px;
   height: 120px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003557}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003561}}
 .my.catalog .list-cate1 {
   text-align: center;
   height: 60px;
@@ -589,21 +594,21 @@ li {
   font-size: 16px;
   border-color: #EBE8E8;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003567}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003571}}
 .aside {
   float: left;
   margin-right: 35px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003571}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003575}}
 .inside {
   margin-left: 275px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003575}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003579}}
 .book-show .hd {
   height: 20px;
   margin-bottom: 20px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003579}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003583}}
 .book-show .hd .page-curmbs li {
   float: left;
   margin-right: 5px;
@@ -614,11 +619,11 @@ li {
   background-repeat: no-repeat;
   line-height: 1.333;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003588}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003592}}
 .book-show .hd .page-curmbs li.current {
   background-position: 0 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003591}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003595}}
 .book-show .hd .page-curmbs li a {
   padding: 0 10px 0 0;
   margin-right: 5px;
@@ -628,12 +633,12 @@ li {
   font-size: 14px;
   line-height: 1.333;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003603}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003607}}
 .book-show .booklist {
   /*margin-top: 30px;*/
   min-height: 600px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003608}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003612}}
 .book-show .booklist-inner .book {
   width: 156px;
   height: 278px;
@@ -645,11 +650,11 @@ li {
   color: #666;
   font-size: 14px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003618}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003622}}
 .book-show .booklist-inner .book:hover {
   background: #f0f0ed;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003621}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003625}}
 .book-show .booklist-inner .book .img-block {
   width: 138px;
   height: 182px;
@@ -657,14 +662,14 @@ li {
   display: inline-block;
   padding: 1px 3px 5px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003627}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003631}}
 .book-show .booklist-inner .book .img-block img {
   width: 134px;
   height: 178px;
   padding: 1px;
   display: inline-block;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003634}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003638}}
 .book-show .booklist-inner .book .title-link {
   width: 140px;
   height: 42px;
@@ -675,12 +680,12 @@ li {
   -webkit-transition: color .2s;
           transition: color .2s;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003642}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003646}}
 .book-show .booklist-inner .book .title-link .title {
   line-height: 17px;
   word-break: break-all;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003647}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003651}}
 .book-show .booklist-inner .book .book-num {
   width: 140px;
   margin-top: 6px;
@@ -693,13 +698,13 @@ li {
   color: #FB5E57;
 }
 /*详情列表*/
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003662}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003666}}
 .list {
   width: 880px;
   margin: 0 auto;
   padding-top: 20px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003666}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003670}}
 .list .page-title {
   line-height: 28px;
   vertical-align: middle;
@@ -707,62 +712,62 @@ li {
   color: #666;
   margin-bottom: 20px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003673}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003677}}
 .list .list-result {
   min-height: 500px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003675}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003679}}
 .list .list-result li {
   padding-bottom: 30px;
   border-bottom: 1px solid #eee;
   margin-bottom: 20px;
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003681}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003685}}
 .list .list-result .pic {
   display: inline-block;
   float: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003684}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003688}}
 .list .list-result .pic img {
   width: 120px;
   height: 160px;
   border-radius: 5px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003690}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003694}}
 .list .list-result .detail {
   margin-left: 140px;
   color: #333;
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003694}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003698}}
 .list .list-result .detail h2 {
   font-size: 18px;
   line-height: 27px;
   margin-bottom: 14px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003698}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003702}}
 .list .list-result .detail h2 a {
   color: #4EB951;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003702}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003706}}
 .list .list-result .detail div,
 .list .list-result .detail p {
   font-size: 12px;
   margin-bottom: 4px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003705}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003709}}
 .list .list-result .detail div .p-title,
 .list .list-result .detail p .p-title {
   display: inline-block;
   width: 80px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003710}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003714}}
 .list .list-result .detail .des {
   font-size: 14px;
   margin-top: 8px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003714}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003718}}
 .list .list-result .detail .collect {
   position: absolute;
   padding: 0 14px;
@@ -778,23 +783,23 @@ li {
   right: 20px;
   cursor: pointer;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003728}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003732}}
 .list .list-result .detail .collect:hover {
   background-color: #59AF5D;
   color: #fefefe;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003733}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003737}}
 .list .list-result .detail .b-catalog {
   font-size: 14px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003735}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003739}}
 .list .list-result .detail .b-catalog h2 {
   font-size: 14px;
   margin-left: 80px;
   margin-bottom: 8px;
   font-weight: 800;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003741}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003745}}
 .list .list-result .detail .b-catalog .showCbtn {
   padding: 0 14px;
   line-height: 27px;
@@ -806,16 +811,16 @@ li {
   font-weight: 400;
   cursor: pointer;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003752}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003756}}
 .list .list-result .detail .b-catalog .p-title {
   float: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003755}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003759}}
 .list .list-result .detail .b-catalog ul {
   display: none;
   margin-left: 80px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003758}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003762}}
 .list .list-result .detail .b-catalog ul li {
   border-bottom: none;
   padding: 0;
@@ -823,8 +828,30 @@ li {
   font-weight: 800;
 }
 /*我的书架*/
-@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003771}}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003775}}
 .myBooks {
   min-height: 600px;
   margin-top: 30px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003780}}
+.catalog-mod {
+  position: fixed;
+  right: 0;
+  bottom: 10px;
+  width: 250px;
+  height: 300px;
+  background-color: #53b856;
+  color: #f0f0f0;
+  padding: 10px;
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003790}}
+.catalog-mod h2 {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/I\:\/Reader\/public\/stylesheets\/global\.less}line{font-family:\00003795}}
+.catalog-mod ul li {
+  font-size: 14px;
+  margin-bottom: 10px;
 }

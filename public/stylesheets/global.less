@@ -17,6 +17,7 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
+    position: relative;
 }
 
 body {
@@ -475,6 +476,9 @@ li {
                     height: 23px;
                     line-height: 23px;
                 }
+                .book-cata{
+                    display: none;
+                }
             }
         }
     }
@@ -771,4 +775,26 @@ li {
 .myBooks{
     min-height: 600px;
     margin-top: 30px;
+}
+
+.catalog-mod{
+    position: fixed;
+    right: 0;
+    bottom: 10px;
+    width: 250px;
+    height: 300px;
+    background-color: #53b856;
+    color: #f0f0f0;
+    padding: 10px;
+    display: none;
+    h2{
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+    ul{
+        li{
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+    }
 }

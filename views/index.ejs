@@ -44,6 +44,14 @@
                                     </a>
                                     <a href="<%=bookPath%><%=item.bookId%>" class="book-title" target="_blank"><%=item.bookName%></a>
                                     <p class="book-num"><%=item.publishDate%></p>
+                                    <% var deslist = item.bookDesc.split('*')%>
+                                    <ul class="book-cata">
+                                    <%if(deslist.length > 2 && deslist[2].length > 0){%>
+                                        <%for(var i = 2;i< deslist.length;i++){%>
+                                        <li><%=deslist[i]%></li>
+                                        <%}%>
+                                    <%}%>
+                                    </ul>
                                 </li>
                                 <% }); %>
                             </ul>
@@ -63,6 +71,14 @@
                                     </a>
                                     <a href="<%=bookPath%><%=item.bookId%>" title="" class="book-title" target="_blank"><%=item.bookName%></a>
                                     <p class="book-num"><%=item.publishDate%></p>
+                                    <% var deslist = item.bookDesc.split('*')%>
+                                    <ul class="book-cata">
+                                    <%if(deslist.length > 2 && deslist[2].length > 0){%>
+                                        <%for(var i = 2;i< deslist.length;i++){%>
+                                        <li><%=deslist[i]%></li>
+                                        <%}%>
+                                    <%}%>
+                                    </ul>
                                 </li>
                                 <% }); %>
                             </ul>
@@ -83,5 +99,24 @@
         })
     })()
 </script>
-
+<div class="catalog-mod" id="catalog-mod">
+    <h2>目录：</h2>
+    <ul id="cate-ul">
+    </ul>
+</div>
+<script>
+    (function(){
+        var cateUl = $('#cate-ul'); 
+        var catalogMod = $('#catalog-mod');
+        $('.book-cover').hover(function() {
+            /* Stuff to do when the mouse enters the element */
+            var cata = $(this).nextAll('.book-cata').html();
+            cateUl.html(cata);
+            catalogMod.show();
+        }, function() {
+            /* Stuff to do when the mouse leaves the element */
+            catalogMod.hide();
+        });
+    })()
+</script>
 <%- include base/footer.ejs %>
