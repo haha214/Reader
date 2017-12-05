@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var request = require('request');
 var config = require('../config/config');
-
+var imgs = require('../imgs/imgConfig.js');
 
 
 /* GET home page. */
@@ -24,6 +24,13 @@ router.get('/', function(req, res, next) {
                     //console.log(result);
                     if (result.jsonRet == 200){
                         result = result.pageBean;
+                        result.list.forEach(function(el,index,array){
+                            if (el.bookISBN in imgs) {
+                                array[index].bookImage = imgs[el.bookISBN];
+                            } else{
+                                array[index].bookImage = config.server + el.bookImage
+                            }
+                        })
                         return res.render('sort',{
                             'title': '分类',
                             'result' : result,

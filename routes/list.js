@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var request = require('request');
 var config = require('../config/config');
+var imgs = require('../imgs/imgConfig.js');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -15,11 +16,18 @@ router.get('/', function(req, res, next) {
         try{
             if (!err && httpResponse.statusCode == 200) {
                 var result = JSON.parse(body);
-                //console.log(result);
                 if (result.jsonRet == 200) {
+                        result = result.pageBean;
+                        result.list.forEach(function(el,index,array){
+                            if (el.bookISBN in imgs) {
+                                array[index].bookImage = imgs[el.bookISBN];
+                            } else{
+                                array[index].bookImage = config.server + el.bookImage
+                            }
+                        })
                     return res.render('list',{
                         'title' : '详情列表',
-                        'result' : result.pageBean,
+                        'result' : result,
                         'desc' : req.query.desc || '',
                         'bookPath' : config.server + 'admin/queryBookFileInfo.action?bookId=',
                         'serverPath' : config.server
