@@ -80,6 +80,8 @@
                                             <option value="B005" >计算机技术</option>
                                             <option value="B006">锻压、旋压、整形设备</option>
                                             <option value="B023">材料</option>
+                                            <option value="B024">工艺</option>
+                                            <option value="B025">铸锻件</option>
                                             <option value="B007">标准</option>
                                             <option value="B008">化工</option>
                                             <option value="B009">核电</option>
@@ -214,7 +216,9 @@
             var level15 = cateFun.cate('检查和试验','B020',zh.num);
             var level16 = cateFun.cate('涂装、设备维护和改造','B021',zh.num);
             var level17 = cateFun.cate('认证文件','B022',zh.num);
-            var level18 = cateFun.cate('认证材料','B023',zh.num);
+            var level18 = cateFun.cate('材料','B023',zh.num);
+            var level19 = cateFun.cate('工艺','B024',zh.num);
+            var level20 = cateFun.cate('铸锻件','B025',zh.num);
 	   
             var eg = cateFun.cate('英文文献','B001',fl.num);
             var jp = cateFun.cate('日文文献','B002',fl.num);
