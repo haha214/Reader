@@ -6,7 +6,7 @@
             <% result.list.forEach(function(item){%>
             <li class="clearfix item">
                 <a href="<%=serverPath%>admin/queryBookFileInfo.action?bookId=<%=item.bookId%>" title="" class="pic" target="_blank">
-                    <img src="<%=serverPath%><%= item.bookImage%>" alt="">
+                    <img src="<%= item.bookImage%>" alt="">
                 </a>
                 <div class="detail">
                     <button class="collect" data-book="<%=item.bookId%>">收藏</button>

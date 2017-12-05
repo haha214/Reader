@@ -26,6 +26,18 @@
                             <div class="bd">
                                 <ul class="list1">
                                     <li>
+                                        <a href="/sort?type=A001-B023" title="" class="list-cate1" data-id="A001-B023">材料</a>
+                                    </li>
+                                    <li>
+                                        <a href="/sort?type=A001-B024" title="" class="list-cate1" data-id="A001-B024">工艺</a>
+                                    </li>
+                                    <li>
+                                        <a href="/sort?type=A001-B025" title="" class="list-cate1" data-id="A001-B025">铸锻件</a>
+                                    </li>
+                                    <li>
+                                        <a href="/sort?type=A001-B026" title="" class="list-cate1" data-id="A001-B026">机械</a>
+                                    </li>
+                                    <li>
                                         <a href="/sort?type=A001-B001" title="" class="list-cate1" data-id="A001-B001">轧制设备</a>
                                     </li>
                                     <li>
@@ -91,9 +103,6 @@
                                     <li>
                                         <a href="/sort?type=A001-B022" title="" class="list-cate1" data-id="A001-B022">认证文件</a>
                                     </li>
-                                    <li>
-                                        <a href="/sort?type=A001-B023" title="" class="list-cate1" data-id="A001-B022">材料</a>
-                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -137,6 +146,9 @@
                                     'A001-B021' : '涂装、设备维护和改造',
                                     'A001-B022' : '认证文件',
                                     'A001-B023' : '材料',
+                                    'A001-B024' : '工艺',
+                                    'A001-B025' : '铸锻件',
+                                    'A001-B026' : '机械',
                                     'A002-B001' : '英文文献',
                                     'A002-B002' : '日文文献',
                                     'A002-B003' : '俄文文献'
@@ -167,7 +179,7 @@
                                     <% result.list.forEach(function(item){ %>
                                     <div class="book">
                                         <a href="/sourceList?bookISBN=<%=item.bookISBN%>" title="" class="img-block" target="_blank">
-                                            <img src='<%=imgPath%><%= item.bookImage%>' alt="">
+                                            <img src='<%= item.bookImage%>' alt="">
                                         </a>
                                         <a href="/sourceList?bookISBN=<%=item.bookISBN%>" title="" class="title-link" target="_blank">
                                             <span class="title"><%= item.bookName%></span>

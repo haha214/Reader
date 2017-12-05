@@ -40,7 +40,7 @@
                                 <% newBook.forEach(function(item){%>
                                 <li class="book">
                                     <a href="<%=bookPath%><%=item.bookId%>" title="" class="book-cover" target="_blank">
-                                        <img src="<%=imgPath%><%=item.bookImage%>" alt="" class="book-img">
+                                        <img src="<%=item.bookImage%>" alt="" class="book-img">
                                     </a>
                                     <a href="<%=bookPath%><%=item.bookId%>" class="book-title" target="_blank"><%=item.bookName%></a>
                                     <p class="book-num"><%=item.publishDate%></p>
@@ -67,7 +67,7 @@
                                 <% clickBook.forEach(function(item){%>
                                 <li class="book">
                                     <a href="<%=bookPath%><%=item.bookId%>" title="" class="book-cover" target="_blank">
-                                        <img src="<%=imgPath%><%=item.bookImage%>" alt="" class="book-img">
+                                        <img src="<%=item.bookImage%>" alt="" class="book-img">
                                     </a>
                                     <a href="<%=bookPath%><%=item.bookId%>" title="" class="book-title" target="_blank"><%=item.bookName%></a>
                                     <p class="book-num"><%=item.publishDate%></p>
