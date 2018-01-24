@@ -33,38 +33,12 @@
                     <div class="book_mod">
                         <div class="hd">
                             <!-- <a href="" title="" target="_blank">更多&nbsp;></a> -->
-                            <h3 class="mod-title">新书上线</h3>
-                        </div>
-                        <div class="bd">
-                            <ul class="clearfix">
-                                <% newBook.forEach(function(item){%>
-                                <li class="book">
-                                    <a href="<%=bookPath%><%=item.bookId%>" title="" class="book-cover" target="_blank">
-                                        <img src="<%=item.bookImage%>" alt="" class="book-img">
-                                    </a>
-                                    <a href="<%=bookPath%><%=item.bookId%>" class="book-title" target="_blank"><%=item.bookName%></a>
-                                    <p class="book-num"><%=item.publishDate%></p>
-                                    <% var deslist = item.bookDesc.split('*')%>
-                                    <ul class="book-cata">
-                                    <%if(deslist.length > 2 && deslist[2].length > 0){%>
-                                        <%for(var i = 2;i< deslist.length;i++){%>
-                                        <li><%=deslist[i]%></li>
-                                        <%}%>
-                                    <%}%>
-                                    </ul>
-                                </li>
-                                <% }); %>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="book_mod">
-                        <div class="hd">
-                            <!-- <a href="" title="" target="_blank">更多&nbsp;></a> -->
                             <h3 class="mod-title">热门推荐</h3>
                         </div>
                         <div class="bd">
                             <ul class="clearfix">
-                                <% clickBook.forEach(function(item){%>
+                                <% clickBook.forEach(function(item,index){%>
+                                <% if(index < 10){%>
                                 <li class="book">
                                     <a href="<%=bookPath%><%=item.bookId%>" title="" class="book-cover" target="_blank">
                                         <img src="<%=item.bookImage%>" alt="" class="book-img">
@@ -80,10 +54,41 @@
                                     <%}%>
                                     </ul>
                                 </li>
+                                <%}%>
                                 <% }); %>
                             </ul>
                         </div>
                     </div>
+                    <div class="book_mod">
+                        <div class="hd">
+                            <!-- <a href="" title="" target="_blank">更多&nbsp;></a> -->
+                            <h3 class="mod-title">新书上线</h3>
+                        </div>
+                        <div class="bd">
+                            <ul class="clearfix">
+                                <% newBook.forEach(function(item,index){%>
+                                <% if(index < 10){%>
+                                <li class="book">
+                                    <a href="<%=bookPath%><%=item.bookId%>" title="" class="book-cover" target="_blank">
+                                        <img src="<%=item.bookImage%>" alt="" class="book-img">
+                                    </a>
+                                    <a href="<%=bookPath%><%=item.bookId%>" class="book-title" target="_blank"><%=item.bookName%></a>
+                                    <p class="book-num"><%=item.publishDate%></p>
+                                    <% var deslist = item.bookDesc.split('*')%>
+                                    <ul class="book-cata">
+                                    <%if(deslist.length > 2 && deslist[2].length > 0){%>
+                                        <%for(var i = 2;i< deslist.length;i++){%>
+                                        <li><%=deslist[i]%></li>
+                                        <%}%>
+                                    <%}%>
+                                    </ul>
+                                </li>
+                                <%}%>
+                                <% }); %>
+                            </ul>
+                        </div>
+                    </div>
+                    
                 </div>
 <%- include base/base.ejs %>
 <script>

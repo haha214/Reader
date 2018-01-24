@@ -43,6 +43,12 @@
                     <ul class="nav">
                         <li><a href="uppdf.jsp" title="">上传</a></li>
                         <li><a href="queryBookList.action?page=1" title="">查看</a></li>
+                        <li>
+                            <a href="bm_readhistory.jsp" title="">浏览记录</a>
+                        </li>
+                        <li>
+                            <a href="bm_search.jsp" title="">阅读统计</a>
+                        </li>
                     </ul>
                 </div>
             </div>

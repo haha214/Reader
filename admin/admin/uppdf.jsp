@@ -20,6 +20,12 @@
                     <ul class="nav">
                         <li><a href="uppdf.jsp" title="">上传</a></li>
                         <li><a href="queryBookList.action?page=1" title="">查看</a></li>
+                        <li>
+                            <a href="bm_readhistory.jsp" title="">浏览记录</a>
+                        </li>
+                        <li>
+                            <a href="bm_search.jsp" title="">阅读统计</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -45,8 +51,47 @@
                                         <label for="">isbn</label>
                                     </td>
                                     <td>
-                                        <div class="text">
-                                            <input type="text" name="bookISBN" value="" id="bookISBN">
+                                        <div class="text" style="width: 35%; display:inline-block;">
+                                            <input type="text" name="bookISBN" value="" id="bookISBN" >
+                                            <div class="effects"></div>
+                                        </div>
+                                        <div class="text" style="width: 50%; display:inline-block;">
+                                            <select style="border:none;height:24px; width: 100%;margin-top:1px;" id="sel-isbn">
+                                                <option value="">可选项</option>
+                                                <option value="0038-920X">钢(0038-920X) </option>
+                                                <option value="1341-688X">铁与钢-vol.22(1341-688X)</option>
+                                                <option value="0021-1575">铁与钢-vol.103(0021-1575)</option>
+                                                <option value="0026-0827">冶金师(0026-0827)</option>
+                                                <option value="1684-257X">轧制生产(1684-257X)</option>
+                                                <option value="0935-7254">冶金设备与技术(0935-7254)</option>
+                                                <option value="2271-3646">冶金研究与技术(2271-3646)</option>
+                                                <option value="0412">情报专题(0412)</option>
+                                                <option value="1547-0423">钢铁技术(1547-0423)</option>
+                                                <option value="0143-7798">国际钢铁时代(0143-7798)</option>
+                                                <option value="0495-7644">特殊钢(0495-7644)</option>
+                                                <option value="0214">机械行业动态信息(0214)</option>
+                                                <option value="1000-3940"> 锻压技术(1000-3940)</option>
+                                                <option value="1672-0121"> 锻压装备与制造技术(1672-0121)</option>
+                                                <option value="1001-6988">工业炉(1001-6988)</option>
+                                                <option value="0258-0918">核科学与工程(0258-0918)</option>
+                                                <option value="1004-2539">机械传动(1004-2539)</option>
+                                                <option value="1002-2333">机械工程师(1002-2333)</option>
+                                                <option value="1005-0299">材料科学与工艺(1005-0299)</option>
+                                                <option value="1000-386X">计算机应用与软件(1000-386X)</option>
+                                                <option value="1009-539X">节能与环保(1009-539X)</option>
+                                                <option value="1005-0329">流体机械(1005-0329)</option>
+                                                <option value="1005-4898">铝加工(1005-4898)</option>
+                                                <option value="1001-0785">起重运输机械(1001-0785)</option>
+                                                <option value="1672-741X">隧道建设(1672-741X)</option>
+                                                <option value="1003-8620">特殊钢(1003-8620)</option>
+                                                <option value="1000-6656">无损检测(1000-6656)</option>
+                                                <option value="1001-4837">压力容器(1001-4837)</option>
+                                                <option value="1001-1269">冶金设备(1001-1269)</option>
+                                                <option value="1671-6795">有色金属加工(1671-6795)</option>
+                                                <option value="1003-9996">轧钢(1003-9996)</option>
+                                                <option value="1001-196X">重型机械(1001-196X)</option>
+                                                <option value="1671-8321">中国水泥(1671-8321)</option>
+                                            </select>
                                             <div class="effects"></div>
                                         </div>
                                     </td>
@@ -82,6 +127,10 @@
                                             <option value="B023">材料</option>
                                             <option value="B024">工艺</option>
                                             <option value="B025">铸锻件</option>
+                                            <option value="B026">机械</option>
+                                            <option value="B027">新能源</option>
+                                            <option value="B028">流体</option>
+                                            <option value="B029">工程建设</option>
                                             <option value="B007">标准</option>
                                             <option value="B008">化工</option>
                                             <option value="B009">核电</option>
@@ -219,6 +268,10 @@
             var level18 = cateFun.cate('材料','B023',zh.num);
             var level19 = cateFun.cate('工艺','B024',zh.num);
             var level20 = cateFun.cate('铸锻件','B025',zh.num);
+            var level21 = cateFun.cate('机械','B026',zh.num);
+            var level22 = cateFun.cate('新能源','B027',zh.num);
+            var level23 = cateFun.cate('流体','B028',zh.num);
+            var level24 = cateFun.cate('工程建设','B029',zh.num);
 	   
             var eg = cateFun.cate('英文文献','B001',fl.num);
             var jp = cateFun.cate('日文文献','B002',fl.num);
@@ -253,6 +306,10 @@
                 }
                 $('form').submit();
             });
+            $('#sel-isbn').on('change',function(event){
+                var isbn = $(this).val();
+                bookISBN.val(isbn);
+            })
         })()
     </script>
         
